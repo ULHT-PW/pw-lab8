@@ -2,12 +2,12 @@
 
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
-# Programação Web - Laboratório 8: primeira web app django ⛅
+# Lab 8: portfolio, a minha primeira web app em django ⛅
 
 **OBJECTIVO**: 
 * Neste laboratório criará uma primeira aplicação django simples, para se familiarizar com os conceitos de urls, views, templates e sua linguagem. 
-* Será o primeiro laboratório do seu projeto final, o seu portfolio. Deverá usar como conteúdos material seu, mas não precisam ser muitos conteúdos. A ideia é neste laboratório trabalhar a estrutura e dinamicidade. 
-* Exercitará a edição dos módulos urls.py, views.py e a criação de templates HTML com linguagem template.
+* Será o primeiro laboratório para construção do seu projeto final, o seu portfolio. Deverá usar como conteúdos material seu, mas não precisam ser muitos conteúdos neste laboratório. A ideia é neste laboratório trabalhar a estrutura e dinamicidade. 
+* Exercitará a edição dos módulos `urls.py`, `views.py` e a criação de templates HTML com linguagem template.
 
 **RECOMENDAÇÕES**: 
 * leia uma vez o enunciado. É extenso, mas detalha todos os passos e fornece o código necessário, sendo rápida a sua realização.
@@ -32,8 +32,8 @@ Vamos nesta secção criar um projeto e aplicação django.
 
 ### 1.2. Configure a aplicação
 1. abra a pasta com o Pycharm
-1. em config/settings.py registe a aplicação na lista INSTALLED_APPS, colocando no fim `'portfolio'`
-1. em config/urls.py registe a rota para a nova aplicação portfolio, inserindo na lista urlpatterns o caminho `path('', include('portfolio.urls))` para a sua aplicação, ficando:
+1. em `config/settings.py` registe a aplicação na lista `INSTALLED_APPS`, colocando no fim `'portfolio'`
+1. em `config/urls.py` registe a rota para a nova aplicação portfolio, inserindo na lista urlpatterns o caminho `path('', include('portfolio.urls))` para a sua aplicação, ficando:
 
 ```python
 # config/urls.py
