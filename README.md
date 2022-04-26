@@ -2,7 +2,7 @@
 
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
-# Lab 8: portfolio, a minha primeira web app em django ⛅
+# Lab 8: a minha primeira web app em Django: Portfolio I ⛅
 
 **OBJECTIVO**: 
 * Neste laboratório criará uma primeira aplicação django simples, para se familiarizar com os conceitos de urls, views, templates e sua linguagem. 
