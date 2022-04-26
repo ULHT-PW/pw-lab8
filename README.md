@@ -1,5 +1,3 @@
-# pw-2022-lab8-django
-
 **UNIVERSIDADE LUSÓFONA DE HUMANIDADES E TECNOLOGIAS**
 
 # Lab 8: a minha primeira web app em Django: Portfolio I ⛅
