@@ -27,8 +27,6 @@
 
 ## 1. Primeiros passos 👶
 Vamos nesta secção criar um projeto e aplicação django.
-
-### 1.1. Crie um projeto django e uma aplicação 
 1. Abra a linha de comandos (PowerShell ou cmd) e execute os comandos em baixo a cinzento. 
 1. Crie e entre na pasta lab6: `mkdir lab8; cd lab8`
 1. Instale o pipenv executando: `pip install pipenv` ou, se tiver problemas com este comando, com `python -m pip install pipenv`
@@ -40,8 +38,8 @@ Vamos nesta secção criar um projeto e aplicação django.
 1. Pare o servidor com Ctrl + C
 1. Crie a aplicação portfolio, com a instrução `python manage.py startapp portfolio`
 
-
-### 1.2. Configure a aplicação
+ 
+## 2. Configure a aplicação ⚙️
 1. abra a pasta com o Pycharm
 1. em `config/settings.py` registe a aplicação na lista `INSTALLED_APPS`, colocando no fim `'portfolio'`
 1. em `config/urls.py` registe a rota para a nova aplicação portfolio, inserindo na lista urlpatterns o caminho `path('', include('portfolio.urls))` para a sua aplicação, ficando:
