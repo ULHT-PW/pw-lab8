@@ -240,10 +240,13 @@ Recapitulando links de hiperlinks, imagens e ficheiros css:
 ## 9. Página Licenciatura
 1. licenciatura será uma pagina do seu portfolio que apresenta a lista de cadeiras do seu curso, organizada por semestre e anos. Deverá apresentar os seguintes atributos: nome, ano, semestre, ECTS, ano letivo frequentado, topicos abordados, ranking de 1 a 5 estrelas (indicando se gostou ou não), professores (da classe Pessoa com campos nome e link para a sua pagina da lusofona e no linkedin), link para página da cadeira (se existir), lista de projetos realizados (classe projeto)
 1. Construa em HTML & CSS uma pagina licenciatura que liste 3 cadeiras, formatando devidamente os atributos identificados (para já, podem ter texto inventado). Esse template CSS poderá depois ser replicado nas restantes páginas.
+1. use por exemplo este formato de [items isolados](https://codepen.io/LucioStuder/pen/MWrKXdy), ou como [aqui](https://github.com/ULHT-PW/pw-lab4#1-capitais-europeias-com-flexbox) com imagens
 
 ## 10. Página Projetos
 1. a página terá uma lista de projetos realizados, com atributos: titulo, descrição até 500 carateres, imagem, ano de realização, cadeira (classe Cadeira, caso tenha sido projeto associado a uma cadeira), participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin, e link para a aplicação portfolio do projeto PW), link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia)
 1. Construa em HTML & CSS uma pagina projetos que liste 3 projetos, formatando devidamente os atributos identificados (para já, podem ter texto inventado). Esse template CSS poderá depois ser replicado nas restantes páginas.
+2. use por exemplo este formato de [items isolados](https://codepen.io/LucioStuder/pen/MWrKXdy), ou como [aqui](https://github.com/ULHT-PW/pw-lab4#1-capitais-europeias-com-flexbox) com imagens
+
 
 ## 11. Hero Page 🦸‍♀️
 
