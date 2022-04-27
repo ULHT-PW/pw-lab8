@@ -237,7 +237,15 @@ Recapitulando links de hiperlinks, imagens e ficheiros css:
 1. Uma vez tendo a aplicaçao base a funcionar, pode a) adicionar mais páginas HTML, b) referi-las no menu através de hiperlinks, c) criar em `views.py` funções views que as retornem, d) e criar em `urls.py` paths que as mapeiem.
 
 
-## 9. Hero Page 🦸‍♀️
+## 9. Página Licenciatura
+1. licenciatura será uma pagina do seu portfolio que apresenta a lista de cadeiras do seu curso, organizada por semestre e anos. Deverá apresentar os seguintes atributos: nome, ano, semestre, ECTS, ano letivo frequentado, topicos abordados, ranking de 1 a 5 estrelas (indicando se gostou ou não), professores (da classe Pessoa com campos nome e link para a sua pagina da lusofona e no linkedin), link para página da cadeira (se existir), lista de projetos realizados (classe projeto)
+1. Construa em HTML & CSS uma pagina licenciatura que liste 3 cadeiras, formatando devidamente os atributos identificados (para já, podem ter texto inventado). Esse template CSS poderá depois ser replicado nas restantes páginas.
+
+## 10. Página Projetos
+1. a página terá uma lista de projetos realizados, com atributos: titulo, descrição até 500 carateres, imagem, ano de realização, cadeira (classe Cadeira, caso tenha sido projeto associado a uma cadeira), participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin, e link para a aplicação portfolio do projeto PW), link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia)
+1. Construa em HTML & CSS uma pagina projetos que liste 3 projetos, formatando devidamente os atributos identificados (para já, podem ter texto inventado). Esse template CSS poderá depois ser replicado nas restantes páginas.
+
+## 11. Hero Page 🦸‍♀️
 
 1. crie uma hero page, página de entrada com alguns elementos por baixo, a sua "carta de apresentação" (lembre-se que um visitante cria uma opinião sobre um site em menos de 1 segundo!).
 
@@ -254,10 +262,9 @@ Recapitulando links de hiperlinks, imagens e ficheiros css:
 * de espectativas do que gostaria de fazer quando acabar o curso. 
 * de hobbies
 
-
 ## 10. Estrutura do Portfolio 
 
-O seu portfolio final terá uma estrutura como em baixo. Para cada item, serão listados vários elementos (por exemplo, licenciatura terá uma lista de cadeiras). A iformação de cada item será guardada numa base de dados, sendo esta consultada para criar as listagens. Será igalmente possivel, caso se tenha autenticado na plataforma, adicionar atraves de formulários novos items. Aprenderemos a fazer isto tudo nas proximas semanas.
+O seu portfolio, no final do semestre, terá uma estrutura como em baixo:
 
 Estrutura da aplicação:
 * landing page
@@ -289,7 +296,8 @@ Estrutura da aplicação:
 * Contacto
 * Rodapé
 
-1. Construa a estrutura e coloque 2 exemplos de cada item (para já, podem ter texto inventado). 
+1. Cada tópico conterá uma lista de vários elementos (por exemplo, licenciatura terá uma lista de cadeiras). A informação de cada item será guardada numa base de dados, sendo esta consultada para criar as listagens. Será igualmente possível, caso se tenha autenticado na plataforma, adicionar atraves de formulários novos items. Aprenderemos a fazer isto tudo nas proximas semanas.
+1. Construa em HTML & CSS uma pagina que liste 3 cadeiras com a informação especificada em baixo (para já, podem ter texto inventado). ESse template poderá depois ser aplicado às restantes páginas, a construir mais adiante.
 2. Na proxima semana construiremos uma base de dados com tabelas que permitirão armazenar toda a informação associada aos vários tópicos. 
 3. Depois, se o utilizador fizer login na aplicação, aparecerá no fim de cada página um formulário onde será possível inserir novos elementos (projetos, tecnologias, etc), e editar existentes.
 4. Será o seu portfolio, uma carta de apresentação sua na internet muito valorizada no mundo do trabalho. 
@@ -298,25 +306,25 @@ Estrutura da aplicação:
 
 ## 11. Conteúdos dos vários items
 
-Nas proximas semanas deverá recolher algum material. Organize-o para já em pastas. Este depois será inserido na base de dados que construirá. Apresentam-se os tipos de conteúdos que conterá cada item de cada tópico.
+Durante as próximas semanas deverá recolher algum material. Organize-o para já em pastas. Este depois será inserido na base de dados que construirá. Apresentam-se os tipos de conteúdos que deverá congregar para cada item de cada tópico.
 
 * **Educação**
    * educação, listar Formação, com campos curso, local, período logotipo da instituição
-	* cursos superior
-	* escolas no secundário
-	* certificados
+      * cursos superior
+      * escolas no secundário
+      * certificados
    * licenciatura, pagina que apresenta a lista de cadeiras do curso, organizada por semestre e anos. Quando clicada uma cadeira, aparece informação relativamente a: nome, ano, semestre, ECTS, ano letivo frequentado, topicos abordados, ranking de 1 a 5 estrelas (indicando se gostou ou não), professores (da classe Pessoa com campos nome e link para a sua pagina da lusofona e no linkedin), link para página da cadeira (se existir), lista de projetos realizados (classe projeto)
    * Aptidões e competências pessoais (com atributos titulo, descrição curta, lista de projetos (Projeto) realizados onde foi aplicada essa competência caso se aplique, lista de disciplinas (Disciplina) onde foi trabalhada essa competência caso se aplique)
-        * [Técnicas]( https://www.e-konomista.pt/competencias-tecnicas/): 
-	   * linguagens de programação ou tecnologias, relatórios word, apresentações powerpoint, realização de videos, protótipos
-	* [Organizativas]( https://www.e-konomista.pt/competencias-de-organizacao/)
-	* [Sociais](https://www.e-konomista.pt/aptidoes-e-competencias-sociais)
-	* Linguísticas. lista de linguas estrangeiras faladas, com indicação de nível (proficiente, independente ou elementar), e referencia se existir a certificação obtida ou outra explicação (lingua materna, viveu noutro país)
+         * [Técnicas]( https://www.e-konomista.pt/competencias-tecnicas/): 
+         * linguagens de programação ou tecnologias, relatórios word, apresentações powerpoint, realização de videos, protótipos
+         * [Organizativas]( https://www.e-konomista.pt/competencias-de-organizacao/)
+         * [Sociais](https://www.e-konomista.pt/aptidoes-e-competencias-sociais)
+         * Linguísticas. lista de linguas estrangeiras faladas, com indicação de nível (proficiente, independente ou elementar), e referencia se existir a certificação obtida ou outra explicação (lingua materna, viveu noutro país)
    * interesses (com atributos titulo, descrição, fotografia e link (e.g., clube de fotografia) 
-	* outras atividades
-	* desporto
-	* hobbies
-	* voluntariado
+         * outras atividades
+         * desporto
+         * hobbies
+         * voluntariado
 
 * **projetos**
    * realizados por mim: lista de projetos realizados, com atributos: titulo, descrição até 500 carateres, imagem, ano de realização, cadeira (classe Cadeira, caso tenha sido projeto associado a uma cadeira), participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin, e link para a aplicação portfolio do projeto PW), link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia)
@@ -324,9 +332,9 @@ Nas proximas semanas deverá recolher algum material. Organize-o para já em pas
 
 * **Programação Web**
    * Tecnologias: Falar das seguintes Tecnologias, com os atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, link para site oficial, descrição das principais características. 
-      * Back-end: Laravel, ASP.NET, Spring MVC, Express, Django
-      * Front-end: Angular, React, Vue, Svelte
-      * Outras: WordPress, OutSystems, Weebly, Wix
+         * Back-end: Laravel, ASP.NET, Spring MVC, Express, Django
+         * Front-end: Angular, React, Vue, Svelte
+         * Outras: WordPress, OutSystems, Weebly, Wix
    * Laboratórios: página que lista links para os laboratórios realizados na disciplina de PW, com o título e descrição dos tópicos abordados
    * Notícias: listagem de 10 noticias sobre artigos do medium.com que tenha gostado, com campos: título, 3 linhas de texto, imagem e link
    * exemplos de técnicas e efeitos que gosta, sites que gosta e de sites que acha maus, tendencias modernas de programação Web, aspectos obsoletos
