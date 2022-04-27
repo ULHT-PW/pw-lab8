@@ -28,7 +28,7 @@
 ## 1. Primeiros passos 👶
 Vamos nesta secção criar um projeto e aplicação django.
 
-### 1.1. Crie um projeto e app django
+### 1.1. Crie um projeto django e uma aplicação 
 1. Abra a linha de comandos (PowerShell ou cmd) e execute os comandos em baixo a cinzento. 
 1. Crie e entre na pasta lab6: `mkdir lab8; cd lab8`
 1. Instale o pipenv executando: `pip install pipenv` ou, se tiver problemas com este comando, com `python -m pip install pipenv`
@@ -208,7 +208,10 @@ Como se vê, este módulo importa o módulo views que se encontra na mesm *packa
 
 
 
-## 7. Recapitulando links de hiperlinks, imagens e ficheiros css 🔗
+## 7. Recapitulando links 🔗
+
+Recapitulando links de hiperlinks, imagens e ficheiros css:
+
 1. Para criar **hiperlinks**, insira `href="{% url 'portfolio:home' %}"`, onde `portfolio` é o nome dado à app (no ficheiro `portfolio\urls.py` deverá ter `app_name=portfolio`), e `home` é o nome do path especificado em portfolio/urls.py. 
 
 2. Para a **imagem** `<img>` no ficheiro `base.html`, inclua antes desta a etiqueta template `{% load static %}`, para construir o URL para o path relativo. Na especificação da `src`, use a etiqueta template `{% static 'portfolio/images/image.png' %}`, ficando da seguinte forma:
@@ -229,143 +232,29 @@ Como se vê, este módulo importa o módulo views que se encontra na mesm *packa
 
 
 ## 8. Ready... GO! 🏁
-1. Lance a aplicação com o comando `python manage.py runserver` e verifique que consegue visualizar corretamente a aplicação que fez. 
+1. Lance a aplicação com o comando `python manage.py runserver` e verifique que consegue visualizar corretamente a aplicação que fez.
 
-
-## 9. Mais detalhes
 1. Uma vez tendo a aplicaçao base a funcionar, pode a) adicionar mais páginas HTML, b) referi-las no menu através de hiperlinks, c) criar em `views.py` funções views que as retornem, d) e criar em `urls.py` paths que as mapeiem.
 
 
+## 9. Hero Page 🦸‍♀️
+
+1. crie uma hero page, página de entrada com alguns elementos por baixo, a sua "carta de apresentação" (lembre-se que um visitante cria uma opinião sobre um site em menos de 1 segundo!).
+
+2. Utilize a que criou como entrada da aplicação Heroku, com o indice dos laboratórios de PW. O princípio é fazer algo ao estilo deste [exemplo](https://codepen.io/LucioStuder/pen/vYpqwra) 
+   1. uma fotografia ou video em background
+   1. uma frase que goste ao lado, motivacional
+   1. manter o menu anterior em cima. 
+
+3. Se quiser, reviste, mas sem perder muito tempo, ideias dos slides sobre [web design]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40) pgs 41 a 46 e os slides sobre [efeitos e animações]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf?time=1648059790707) (video-background, parallax), e o [lab4]( https://github.com/ULHT-PW/pw-lab4) e [lab 5]( https://github.com/ULHT-PW/pw-lab5) que fez.
+   
+4. crie um elemento `<article>` por baixo, que apareça se fizer scroll, À semelhança do [exemplo](https://codepen.io/LucioStuder/pen/vYpqwra?editors=1100), e inclua um texto de apresentação. Para já coloque algumas palavras [daqui](https://pl.lipsum.com/). A ideia será ser uma breve apresentação sua que fale por exemplo:
+* de motivações para escolher o seu curso, 
+* daquilo que mais tem gostado de aprender no curso,
+* de espectativas do que gostaria de fazer quando acabar o curso. 
+* de hobbies
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### layout
-
-* Integre como landing page (pagina de chegada) a que criou de entrada na sua aplicação Heroku dos laboratórios de PW. Deverá ter uma imagem grande, uma frase ao lado e um menu em cima dentro dum elemento `<header>`, a horizontal. 
-   * Reviste se quiser, mas sem perder muito tempo, ideias dos slides sobre [web design]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40) pgs 41 a 46, codepens [1](https://codepen.io/LucioStuder/pen/popNbpm) e [2](https://codepen.io/LucioStuder/pen/vYpqwra), slides sobre [efeitos e animações]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf?time=1648059790707) (video-background, parallax), e o [lab4]( https://github.com/ULHT-PW/pw-lab4) e [lab 5]( https://github.com/ULHT-PW/pw-lab5) que fez.
-
-formatando Menu
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 3.2 Hero Page
-
-#### main
-
-
-no elemento `<main>` inclua uma fotografia ou video em background e uma frase que goste ao lado, motivacional. Para já se não tiver nenhuma ideia ponha algumas palavras [daqui](https://pl.lipsum.com/), poderá melhorar depois. Pode inspirar-se [aqui](https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=46) e formatar como neste [exemplo](https://codepen.io/LucioStuder/pen/vYpqwra).
-
-
-
-#### article
-no elemento `<article>` inclua um texto de apresentação. Para já coloque algumas palavras [daqui](https://pl.lipsum.com/) e formate mais tarde.
-
-
-1. crie uma hero page, página de entrada com alguns elementos por baixo, a sua "carta de apresentação" (lembre-se que um visitante cria uma opinião sobre um site em menos de 1 segundo!). Será diferente das restantes.
 
  
-Web portfolio
-•	Crie um
-•	Heropage
-o	crie uma heropage para o seu portfolio. Uma imagem, uma frase e uma chamada de ação. 
-o	Siga as recomendações para fazer uma página com um bom design, tal como discutido nos [slides]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40) pgs 41 a 46, assim como ideias sobre [efeitos e animações]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf?time=1648059790707). Revisite o enunciado do [lab4]( https://github.com/ULHT-PW/pw-lab4) e [lab 5]( https://github.com/ULHT-PW/pw-lab5) e os laboratórios que fez. Aplique em geral o que aprendeu de mais avançado (design responsivo, CSS grid, flexbox, e efeitos tais como parallax, video backcground, timelines) por forma a fazer uma página moderna e a seu gosto. 
-o	Defina um template que goste, mas não gaste muito tempo. Será algo que poderá aprimorar. O importante deste laboratório é construir a estrutura das páginas e colocar 2 exemplos de cada item (para já podem ser ficcionados, com texto inventado). Na proxima semana construiremos uma base de dados onde armazenará toda a informação identificada em baixo. A ideia é que, se o utilizador fizer login na sua aplicação (algo que aprenderemos mais tarde) apareça no fim de cada página um formulário onde possa inserir novos elementos (projetos, tecnologias, etc).
-o	Será o seu portfolio, uma carta de apresentação sua na internet. 
-o	Crie páginas HTML para os seguintes tópicos.
-o	Nas várias páginas que listam tecnologias, projetos, noticias, elementos que têm imagem, texto e mais alguns atributos, pense num layout de items independentes / tipo postais, como feito em 
-o	
-•	sobre mim
-o	apresentação, com foto, descrição sumária 10 linhas, carta de apresentação que fale
-	da motivação para ter ido estudar o curso que escolheu 
-	do que está a gostar mais do seu curso
-	daquilo que mais tem gostado de aprender no curso
-	espectativas do que gostaria de fazer quando acabar o curso. 
-	dos seus hobbies
-	video de 1 min a apresentar este website, um projeto de projetos
-	CV em formato PDF descarregável
-•	Formação
-o	educação, listar Formação, com campos curso, local, período logotipo da instituição
-	cursos superior
-	escolas no secundário
-	certificados
-o	licenciatura, pagina que apresenta a lista de cadeiras do curso, organizada por semestre e anos. Quando clicada uma cadeira, aparece informação relativamente a: 
-•	nome
-•	ano
-•	semestre
-•	ECTS
-•	ano letivo frequentado
-•	programa abordado
-•	ranking de 1 a 5 estrelas, indicando se gostou ou não
-•	nota (opcional, pôr nas melhores 😊)
-•	professores (da classe Pessoa com campos nome e link para a sua pagina da lusofona e no linkedin)
-•	link para página da cadeira
-•	lista de projetos realizados (classe projeto)
-•	projetos
-o	lista de projetos realizados, com campos: titulo, descrição até 500 carateres, imagem, ano de realização, cadeira (classe Cadeira, caso tenha sido projeto associado a uma cadeira), participantes (da classe Pessoa, da classe Pessoa com campos nome e link para a sua pagina no linkedin, e link para a aplicação portfolio do projeto PW), link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia)
-•	TFCs
-o	lista de 6 TFCs de anos passados realizados que achou interessantes, onde TFC tem atributos: titulo, autor (multiplos), orientador (multiplos), ano de realização, sumário, resumo até 500 carateres, link para relatório, links para repositório github e vídeo no Youtube, se existentes.
-•	Competências (com campos titulo, descrição, lista de projetos (Projeto) realizados que usem a tecnologia, lista de disciplinas (Disciplina) onde foi trabalhada essa competência)
-o	linguagens de programação ou tecnologias 
-o	incluir também softskills (relatórios word, apresentações powerpoint, realização de videos, protótipos)
-o	línguas estrangeiras faladas, com indicação de nível (proficiente, independente ou elementar), e texto a lustificar, e referencia se existir a certificação obtida
-•	interesses (com campos titulo, descrição, fotografia e link (e.g., clube de fotografia)
-o	outras atividades
-o	hobbies
-o	voluntariado
-•	Notícias
-o	listagem de 10 noticias sobre artigos do medium.com que tenha gostado, com campos: título, 3 linhas de texto, imagem e link
-o	exemplos de sites que gosta e de sites que acha maus, técnicas e efeitos que gosta, tendencias modernas de programação Web, aspectos obsoletos
-•	Programação Web
-o	Falar das seguintes Tecnologias, com os atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, link para site oficial, descrição das principais características. 
-	Back-end: Laravel, ASP.NET, Spring MVC, Express, Django
-	Front-end: Angular, React, Vue, Svelte
-	Outras: WordPress, OutSystems, Weebly, Wix
-o	Apresentar links para os laboratórios realizados na disciplina de PW, com o título por extenso
-•	Recomendações, lista de Post. Post tem atributos autor, data, título e descrição e eventualmente um link (para projeto, página do seu portfolio) e foto.
-o	deverá ter pelo menos 5 posts de outros colegas seus a comentar que gostaram de fazer um determinado projeto consigo, ou de certo trabalho que você fez, ou que é um bom colega para estudar
-•	Sobre, informação sobre este website, incluindo
-o	lista de tecnologias usadas na criação do website: HTML, CSS, Python, Django, Heroku, JavaScript). Tecnologia terá os seguintes atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, imagem exemplificativa (excerto de código, e.g.) link para site oficial, descrição do que é e onde & como foi usado. 
-o	lista de padrões usados: padrão arquitetural cliente-servidor HTTP, padrão de software MVC, padrão de comunicação assíncrona (AJAX) 
-•	Contacto
-o	links para a sua conta linkedin. se não tiver, crie. Adicione à sua conta de colegas seus, amigos e professores e adira a grupos de interesse na sua área (DEISI)
-o	link para o seu github
-o	link para conta Instagram, facebook
-o	nome da cidade onde vive
-o	facebook, instagram
-•	Rodapé
-o	link para Mapa do site
-o	contacto
-o	nome do autor
-o	ano
-o	universidade
-o	logotipo
