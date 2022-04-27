@@ -2,7 +2,7 @@
 
 # Lab 8: a minha primeira web app em Django: Portfolio I ⛅
 
-**OBJECTIVO**: 
+### Objetivo 
 
 * Neste laboratório criará uma primeira aplicação django, para se familiarizar com os conceitos de urls, views, templates e sua linguagem. 
 
@@ -15,7 +15,7 @@
 * Exercitará a edição dos módulos `urls.py`, `views.py` e a criação de templates HTML com linguagem template.
 
 
-**RECOMENDAÇÕES**: 
+### Recomendações
 * leia uma vez o enunciado. Detalha todos os passos e fornece o código necessário, sendo rápida a sua realização.
 * Instale e use o Pycharm  para editar o código de forma fácil (a versão profissional permite usar snippets de código interessantes, pode instalar da mesma forma que o IntelliJ, comprovando que é estudante, pois temos uma licença da universidade). O Pycharm sinaliza os erros. Veja com atenção eventuais mensagens. 
 
@@ -106,7 +106,8 @@ colocar um elemento `div` com ULHT e ano, centrado. colocará mais informação 
 
 
 ### 3.2 Templates Filhos
-1. Crie três templates HTML que estendam o layout.html segundo a seguinte sintaxe:
+1. Crie templates HTML que estendam o layout.html.
+3. Deverão ter a seguinte sintaxe (exemplifica-se para a página `home.html`):
 
 ```html
 <!-- home.html -->
@@ -118,8 +119,9 @@ colocar um elemento `div` com ULHT e ano, centrado. colocará mais informação 
     <p>texto texto texto texto texto texto texto </p>
 {% endblock %}
 ```
-1. Estes terão os conteúdos que irão aparecer no elemento main. 
-2. A única coisa que mudará entre os três elementos será o conteúdo do block main.
+1. Estes serão os conteúdos que irão aparecer no elemento main. 
+2. A única coisa que mudará entre as páginas será o conteúdo do block main.
+3. Crie páginas: apresentação, formação, projetos, competencias, 
 3. Especifica para cada um deles um título e como texto duas ou tres frases.
 
 
@@ -252,6 +254,103 @@ Recapitulando links de hiperlinks, imagens e ficheiros css:
 * de espectativas do que gostaria de fazer quando acabar o curso. 
 * de hobbies
 
+
+## 10. Estrutura do Portfolio 
+
+O seu portfolio final terá uma estrutura como em baixo. Para cada item, serão listados vários elementos (por exemplo, licenciatura terá uma lista de cadeiras). A iformação de cada item será guardada numa base de dados, sendo esta consultada para criar as listagens. Será igalmente possivel, caso se tenha autenticado na plataforma, adicionar atraves de formulários novos items. Aprenderemos a fazer isto tudo nas proximas semanas.
+
+Estrutura da aplicação:
+* landing page
+* Sobre mim
+   * Licenciatura
+      * cadeiras 
+   * Educação
+      * escolas 
+   * Aptidões e competências pessoais
+      * técnicas
+      * organizativas
+      * sociais
+      * linguisticas
+   * Interesses e hobbies
+* projetos 
+   * realizados por mim
+   * projetos de fim de curso interessantes   
+* programação Web   
+   * tecnologias existentes
+      * front-end
+      * back-end
+      * outras 
+   * laboratórios 
+   * notícias    
+* Blog
+* Sobre este website
+   * tecnologias usadas
+   * padrões usados     
+* Contacto
+* Rodapé
+
+1. Construa a estrutura e coloque 2 exemplos de cada item (para já, podem ter texto inventado). 
+2. Na proxima semana construiremos uma base de dados com tabelas que permitirão armazenar toda a informação associada aos vários tópicos. 
+3. Depois, se o utilizador fizer login na aplicação, aparecerá no fim de cada página um formulário onde será possível inserir novos elementos (projetos, tecnologias, etc), e editar existentes.
+4. Será o seu portfolio, uma carta de apresentação sua na internet muito valorizada no mundo do trabalho. 
+5. Cada página irá listar um conjunto de items (cadeiras, projetos, TFCs) que têmassociados um titulo, imagem, texto e mais alguns atributos. Pense num layout de items independentes / tipo postais, como feito no laboratório anterior lab.5.
+
+
+## 11. Conteúdos dos vários items
+
+Nas proximas semanas deverá recolher algum material. Organize-o para já em pastas. Este depois será inserido na base de dados que construirá. Apresentam-se os tipos de conteúdos que conterá cada item de cada tópico.
+
+* **Educação**
+   * educação, listar Formação, com campos curso, local, período logotipo da instituição
+	* cursos superior
+	* escolas no secundário
+	* certificados
+   * licenciatura, pagina que apresenta a lista de cadeiras do curso, organizada por semestre e anos. Quando clicada uma cadeira, aparece informação relativamente a: nome, ano, semestre, ECTS, ano letivo frequentado, topicos abordados, ranking de 1 a 5 estrelas (indicando se gostou ou não), professores (da classe Pessoa com campos nome e link para a sua pagina da lusofona e no linkedin), link para página da cadeira (se existir), lista de projetos realizados (classe projeto)
+   * Aptidões e competências pessoais (com atributos titulo, descrição curta, lista de projetos (Projeto) realizados onde foi aplicada essa competência caso se aplique, lista de disciplinas (Disciplina) onde foi trabalhada essa competência caso se aplique)
+        * [Técnicas]( https://www.e-konomista.pt/competencias-tecnicas/): 
+	   * linguagens de programação ou tecnologias, relatórios word, apresentações powerpoint, realização de videos, protótipos
+	* [Organizativas]( https://www.e-konomista.pt/competencias-de-organizacao/)
+	* [Sociais](https://www.e-konomista.pt/aptidoes-e-competencias-sociais)
+	* Linguísticas. lista de linguas estrangeiras faladas, com indicação de nível (proficiente, independente ou elementar), e referencia se existir a certificação obtida ou outra explicação (lingua materna, viveu noutro país)
+   * interesses (com atributos titulo, descrição, fotografia e link (e.g., clube de fotografia) 
+	* outras atividades
+	* desporto
+	* hobbies
+	* voluntariado
+
+* **projetos**
+   * realizados por mim: lista de projetos realizados, com atributos: titulo, descrição até 500 carateres, imagem, ano de realização, cadeira (classe Cadeira, caso tenha sido projeto associado a uma cadeira), participantes (da classe Pessoa, da classe Pessoa com atributos nome e link para a sua pagina no linkedin, e link para a aplicação portfolio do projeto PW), link para repositorio GitHub, link para video no youtube, tecnologias usadas, competencias (classe Competencia)
+   * trabalhos de fim de curso: lista de 6 Trabalhos finais de Curso (TFCs) de anos passados realizados por colegas seus que achou interessantes, onde TFC tem atributos: titulo, autor (multiplos), orientador (multiplos), ano de realização, sumário, resumo até 500 carateres, link para relatório, links para repositório github e vídeo no Youtube, se existentes. Será facultada uma pasta com relatórios de TFC dos últimos anos para escolher.
+
+* **Programação Web**
+   * Tecnologias: Falar das seguintes Tecnologias, com os atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, link para site oficial, descrição das principais características. 
+      * Back-end: Laravel, ASP.NET, Spring MVC, Express, Django
+      * Front-end: Angular, React, Vue, Svelte
+      * Outras: WordPress, OutSystems, Weebly, Wix
+   * Laboratórios: página que lista links para os laboratórios realizados na disciplina de PW, com o título e descrição dos tópicos abordados
+   * Notícias: listagem de 10 noticias sobre artigos do medium.com que tenha gostado, com campos: título, 3 linhas de texto, imagem e link
+   * exemplos de técnicas e efeitos que gosta, sites que gosta e de sites que acha maus, tendencias modernas de programação Web, aspectos obsoletos
+
+* **Blog**. Post tem atributos autor, data, título e descrição e eventualmente um link (para projeto, página do seu portfolio) e foto. deverá ter pelo menos 5 posts de outros colegas seus a comentar que gostaram de fazer um determinado projeto consigo, ou de certo trabalho que você fez, ou que é um bom colega para estudar
+
+* **Sobre**, informação sobre este website, incluindo
+   * lista de tecnologias usadas na criação do website: HTML, CSS, Python, Django, Heroku, JavaScript). Tecnologia terá os seguintes atributos: nome (por extenso), acrónimo (caso exista, e.g., CSS para Cascade Style Sheet), ano de criação, criador, logotipo, imagem exemplificativa (excerto de código, e.g.) link para site oficial, descrição do que é e onde & como foi usado. 
+   * lista de padrões usados: padrão arquitetural cliente-servidor HTTP, padrão de software MVC, padrão de comunicação assíncrona (AJAX) 
+
+* **Contacto**
+   * links para a sua conta linkedin. se não tiver, crie. Adicione à sua conta de colegas seus, amigos e professores e adira a grupos de interesse na sua área (DEISI)
+   * link para o seu github
+   * link para conta Instagram, facebook
+   * nome da cidade onde vive
+   * facebook, instagram
+
+* **Rodapé**
+   * link para Mapa do site
+   * contacto
+   * nome do autor
+   * ano
+   * universidade
+   * logotipo
 
 
 
