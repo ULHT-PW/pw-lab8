@@ -30,13 +30,14 @@ Vamos nesta secção criar um projeto e aplicação django.
 1. Abra a linha de comandos (PowerShell ou cmd) e execute os comandos em baixo a cinzento. 
 1. Crie e entre na pasta lab6: `mkdir lab8; cd lab8`
 1. Instale o pipenv executando: `pip install pipenv` ou, se tiver problemas com este comando, com `python -m pip install pipenv`
-1. Active o ambiente virtual: `pipenv shell`
-1. Instale o django: `pipenv install django`
-1. crie um projeto django: `django-admin startproject config .`
-1. Migre as base de dados `python manage.py migrate` (falaremos nisto na próxima aula).
-1. Lance o projeto para ver se está tudo ok, com o comando `python manage.py runserver`. Clique no hiperlink indicado e abra no seu browser. 
-1. Pare o servidor com Ctrl + C
-1. Crie a aplicação portfolio, com a instrução `python manage.py startapp portfolio`
+   * se não tiver permissões execute:`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` 
+3. Active o ambiente virtual: `pipenv shell`
+4. Instale o django: `pipenv install django`
+5. crie um projeto django: `django-admin startproject config .`
+6. Migre as base de dados `python manage.py migrate` (falaremos nisto na próxima aula).
+7. Lance o projeto para ver se está tudo ok, com o comando `python manage.py runserver`. Clique no hiperlink indicado e abra no seu browser. 
+8. Pare o servidor com Ctrl + C
+9. Crie a aplicação portfolio, com a instrução `python manage.py startapp portfolio`
 
  
 ## 2. Configure a aplicação ⚙️
