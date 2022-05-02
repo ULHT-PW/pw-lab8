@@ -30,8 +30,8 @@ Vamos nesta secção criar um projeto e aplicação django.
 1. Abra a linha de comandos (PowerShell ou cmd) e execute os comandos em baixo a cinzento. 
 1. Crie e entre na pasta lab6: `mkdir lab8; cd lab8`
 1. Instale o pipenv executando: `pip install pipenv` ou, se tiver problemas com este comando, com `python -m pip install pipenv`
-   a. se tiver erro de permissões execute:`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-   b. se não conseguir instalar o pipenv ou der erro, trabalhe sem ambiente virtual (na aula pratica os professores ajudarão a criar o ambiente). Para tal, instale o django sem ambiente virtual (pipenv) com o comando `python -m pip install django`. nessa caso não precisarás de ativar o ambiente, com `pipenv shell`, e podes diretamente correr `django-admin startproject config`  
+   1. se tiver erro de permissões execute:`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+   1. se não conseguir instalar o pipenv ou der erro, trabalhe sem ambiente virtual (na aula pratica os professores ajudarão a criar o ambiente). Para tal, instale o django sem ambiente virtual (pipenv) com o comando `python -m pip install django`. nessa caso não precisarás de ativar o ambiente, com `pipenv shell`, e podes diretamente correr `django-admin startproject config`  
 3. Active o ambiente virtual: `pipenv shell`
 4. Instale o django: `pipenv install django`
 5. crie um projeto django: `django-admin startproject config .`
