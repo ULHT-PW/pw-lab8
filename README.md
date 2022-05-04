@@ -14,7 +14,6 @@
  
 * Exercitará a edição dos módulos `urls.py`, `views.py` e a criação de templates HTML com linguagem template.
 
-
 ### Recomendações
 * leia uma vez o enunciado. Detalha todos os passos e fornece o código necessário, sendo rápida a sua realização.
 * Instale e use o Pycharm  para editar o código de forma fácil (a versão profissional permite usar snippets de código interessantes, pode instalar da mesma forma que o IntelliJ, comprovando que é estudante, pois temos uma licença da universidade). O Pycharm sinaliza os erros. Veja com atenção eventuais mensagens. 
