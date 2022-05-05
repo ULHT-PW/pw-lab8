@@ -191,7 +191,7 @@ Existem dois ficheiros urls. O urls.py da pasta config, responsável por encamin
 
 1. o config/urls.py já foi configurado na secção 1.2
 
-3. Na pasta portfolio crie o ficheiro `urls.py`. Exemplifica-se em baixo uma rota na lista urlpatterns, devendo incluir uma rota para cada uma das views anteriormente criadas. 
+3. Na pasta portfolio **crie um novo ficheiro `urls.py`**. Exemplifica-se em baixo uma rota na lista urlpatterns, devendo incluir uma rota para cada uma das views anteriormente criadas. 
 
 ```python
 #  hello/urls.py
@@ -260,7 +260,7 @@ Recapitulando links de hiperlinks, imagens e ficheiros css:
 
 3. Se quiser, reviste, mas sem perder muito tempo, ideias dos slides sobre [web design]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.8-web-design.pdf#page=40) pgs 41 a 46 e os slides sobre [efeitos e animações]( https://moodle.ensinolusofona.pt/pluginfile.php/318343/mod_label/intro/pw-02.10-efeitos-e-animacoes.pdf?time=1648059790707) (video-background, parallax), e o [lab4]( https://github.com/ULHT-PW/pw-lab4) e [lab 5]( https://github.com/ULHT-PW/pw-lab5) que fez.
    
-4. crie um elemento `<article>` por baixo, que apareça se fizer scroll, À semelhança do [exemplo](https://codepen.io/LucioStuder/pen/vYpqwra?editors=1100), e inclua um texto de apresentação. Para já coloque algumas palavras [daqui](https://pl.lipsum.com/). A ideia será ser uma breve apresentação sua que fale por exemplo:
+4. crie um elemento `<article>` por baixo, que apareça se fizer scroll, À semelhança do [exemplo](https://codepen.io/LucioStuder/pen/vYpqwra), e inclua um texto de apresentação. Para já coloque algumas palavras [daqui](https://pl.lipsum.com/). A ideia será ser uma breve apresentação sua que fale por exemplo:
 * de motivações para escolher o seu curso, 
 * daquilo que mais tem gostado de aprender no curso,
 * de espectativas do que gostaria de fazer quando acabar o curso. 
