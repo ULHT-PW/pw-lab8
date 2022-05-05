@@ -125,6 +125,7 @@ colocar um elemento `div` com ULHT e ano, centrado. colocará mais informação 
 3. Crie páginas: apresentação, formação, projetos, competencias, 
 3. Especifica para cada um deles um título e como texto duas ou tres frases.
 
+Nota: **Atenção que aqui ainda não consegue ver a sua aplicação a correr! Só depois do ponto 7!**
 
 ## 4. Static 🖼️
 A pasta static contém ficheiros "estáticos", i.e., imagens, ficheiros CSS e scripts JavaScript. Estes organizam-se em pastas especificas. Usaremos a seguinte estrutura para guardar uma imagem e um ficheiro css:
